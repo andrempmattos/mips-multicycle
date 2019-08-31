@@ -1,0 +1,160 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Datapath is 
+    port(
+        Clock, Reset: in std_logic;
+        PCEscCond, PCEsc, IouD, LerMem, EscMem, MemParaReg, IREsc, RegDst, EscReg, ULAFonteA: in std_logic;
+        ULAFonteB, ULAOp, FontePC: in std_logic_vector(1 downto 0);
+        opcode: out std_logic_vector(5 downto 0)
+    );
+end entity;
+
+architecture Structural of Datapath is
+  
+component ALU is
+	generic(VectorLength: positive := 32);
+    port(
+        InputA, InputB: in std_logic_vector(VectorLength-1 downto 0);
+        Operation: in std_logic_vector(2 downto 0);
+        Output: out std_logic_vector(VectorLength-1 downto 0);
+        Zero: out std_logic
+    );
+end component;
+
+component ULAOperation is
+	port(
+        ULAOp: in std_logic_vector(1 downto 0);
+        funct: in std_logic_vector(5 downto 0);
+        Operation: out std_logic_vector(2 downto 0)
+    );
+end component;
+
+component Memory is
+	port(
+        Clock: in std_logic;
+        ReadMem, WrtMem: in std_logic;
+        DataWrt: in std_logic_vector(31 downto 0);
+        Address: in std_logic_vector(31 downto 0);
+        DataRd: out std_logic_vector(31 downto 0)
+    );
+end component;
+
+component LeftShift is
+    generic(VectorLength: positive := 32);
+    port(
+        Input: in std_logic_vector(VectorLength-1 downto 0);
+        Output: out std_logic_vector(VectorLength-1 downto 0)
+    );
+end component;
+
+component Mux4x1 is
+	generic(VectorLength: positive := 8);
+    port(
+        InputA, InputB, InputC, InputD: in std_logic_vector(VectorLength-1 downto 0);
+        Selection: in std_logic_vector(1 downto 0);
+        Output: out std_logic_vector(VectorLength-1 downto 0)
+    );
+end component;
+
+component Mux2x1 is
+    generic(VectorLength: positive := 8);
+    port (
+        InputA, InputB: in std_logic_vector(VectorLength-1 downto 0);
+        Selection: in std_logic;
+        Output: out std_logic_vector(VectorLength-1 downto 0)
+    );
+end component;
+
+component RegisterBank is
+    generic(
+        VectorLength: positive := 8;
+        BitsRegisterAddress: positive := 2
+    );
+    port(
+        Clock, Reset: in std_logic;
+        EscReg: in std_logic;
+        RegisterReadAddressA, RegisterReadAddressB, RegisterWriteAddress: in std_logic_vector(BitsRegisterAddress-1 downto 0);
+        RegisterWrite: in std_logic_vector(VectorLength-1 downto 0);      
+        RegisterReadA, RegisterReadB: out std_logic_vector(VectorLength-1 downto 0)
+    );
+end component;
+
+component Register is
+    generic(
+        VectorLength: positive:= 8
+    );
+    port(
+        Clock, Reset, Enable: in std_logic;
+        Input: in std_logic_vector(VectorLength-1 downto 0);
+        Output: out std_logic_vector(VectorLength-1 downto 0)
+    );
+end component;
+
+component SignalExtension is
+    generic(
+        OriginalVectorLength: positive := 16;
+        ExtendedVectorLength: positive := 32);
+    port(
+        Input: in std_logic_vector(OriginalVectorLength-1 downto 0);
+        Output: out std_logic_vector(ExtendedVectorLength-1 downto 0)
+    );
+end component;
+
+signal zeroULA, enablePC: std_logic;
+
+signal entradaPC, saidaRegPC, saidaMem, saidaMuxPC, saidaRegULA, saidaRegInstr: std_logic_vector(31 downto 0);
+signal regLido1, regLido2, saidaRegDadosMem, dadoEscReg, dadoEscMem, saidaRegA, saidaRegB: std_logic_vector(31 downto 0);
+signal saidaMuxAULA, saidaMuxBULA, saidaExtensaoSinal, saidaExtensaoSinalDesl, saidaULA: std_logic_vector(31 downto 0);
+--signal saidaRegULA : std_logic_vector(31 downto 0);
+
+signal saidaMuxRegSerEscrito: std_logic_vector(4 downto 0);
+signal ctrlULA : std_logic_vector(2 downto 0);
+
+signal deslEsq26to28 : std_logic_vector(31 downto 0);
+
+constant quatro : std_logic_vector(31 downto 0) := (3 => '1', others => '0');
+
+begin
+
+enablePC <= PCEsc or (PCEscCond and zeroULA); 
+
+regPC: registrador generic map(32) port map(clock, reset, enablePC, entradaPC, saidaRegPC);
+
+muxPC: multiplexador2x1 generic map(32) port map (saidaRegPC, saidaRegULA, IouD, saidaMuxPC);
+
+mem: memoria port map (clock, LerMem, EscMem, dadoEscMem, saidaMuxPC, saidaMem);
+
+regIntrucao: registrador generic map(32) port map(clock, reset, IREsc, saidaMem, saidaRegInstr);
+
+muxRegSerEscrito: multiplexador2x1 generic map (5) port map(saidaRegInstr(20 downto 16), saidaRegInstr(15 downto 11), RegDst, saidaMuxRegSerEscrito);
+
+bancoReg: bancoRegistradores generic map (32, 5) port map(clock, reset, EscReg, saidaRegInstr(25 downto 21), saidaRegInstr(20 downto 16),
+																				saidaMuxRegSerEscrito, regLido1, regLido2);
+																				
+regDadosMemoria: registrador generic map (32) port map(clock, reset, '1', saidaMem, saidaRegDadosMem);
+
+muxDadoEscReg: multiplexador2x1 generic map(32) port map (saidaRegULA, saidaRegDadosMem, MemParaReg, dadoEscReg);
+
+regA: registrador generic map (32) port map (clock, reset, '1', regLido1, saidaRegA);
+regB: registrador generic map (32) port map (clock, reset, '1', regLido2, saidaRegB);
+
+muxAEntradaULA : multiplexador2x1 generic map(32) port map (saidaRegPC, saidaRegA, ULAFonteA, saidaMuxAULA);
+muxBEntradaULA: multiplexador4x1 generic map(32) port map (saidaRegB, quatro, saidaExtensaoSinal, saidaExtensaoSinalDesl, ULAFonteB, saidaMuxBULA);
+
+extensorDeSinal : extensaoSinal generic map (16, 32) port map (saidaRegInstr(15 downto 0), saidaExtensaoSinal);
+saidaExtensaoSinalDesl <= saidaExtensaoSinal(29 downto 0)&"00";
+
+opULA: OperacaoULA port map(ULAOp, saidaRegInstr(5 downto 0), ctrlULA);
+
+UnLogArit: ula generic map (32) port map (saidaMuxAULA, saidaMuxBULA, ctrlULA, saidaULA, zeroULA);
+
+regSaidaULA: registrador generic map (32) port map (clock, reset, '1', saidaULA, saidaRegULA);
+
+deslEsq26to28 <= saidaRegPC(31 downto 28)&saidaRegInstr(25 downto 0)&"00";
+
+muxSaidaULA: multiplexador4x1 generic map (32) port map (saidaULA, saidaRegULA, deslEsq26to28, (others => '0'), FontePC, entradaPC);
+
+opcode <= saidaRegInstr(31 downto 26);
+
+end architecture;

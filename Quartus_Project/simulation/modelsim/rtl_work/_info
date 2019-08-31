@@ -1,0 +1,287 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\pedro\Documents\GitHub\INE5406\RelatorioIII\simulation\modelsim
+Ealuoperation
+Z1 w1511386248
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\pedro\Documents\GitHub\INE5406\RelatorioIII\simulation\modelsim
+Z5 8C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/ALUOperation.vhd
+Z6 FC:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/ALUOperation.vhd
+l0
+L4
+VK5@B_J9C;2eMi5:^;IkVM1
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1511959270.859000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/ALUOperation.vhd|
+Z10 !s107 C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/ALUOperation.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 ]0fB:[Bj>J5cAQnkzUdcG1
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 12 aluoperation 0 22 K5@B_J9C;2eMi5:^;IkVM1
+l13
+L12
+VL=O<HmGlm4niPCNSll1d02
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 X:bEag:^Z=9Ijbn>J^BHj3
+!i10b 1
+Eclockdivider
+Z13 w1511469162
+R2
+R3
+R4
+Z14 8C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/clockDivider.vhd
+Z15 FC:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/clockDivider.vhd
+l0
+L4
+V0n3RPT@gFT<O=ZiF^3N=<3
+R7
+31
+Z16 !s108 1511959270.517000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/clockDivider.vhd|
+Z18 !s107 C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/clockDivider.vhd|
+R11
+R12
+!s100 6OclCLNU0Pzh_a1ol9MO01
+!i10b 1
+Abehavioural
+R2
+R3
+DEx4 work 12 clockdivider 0 22 0n3RPT@gFT<O=ZiF^3N=<3
+l15
+L11
+V725H:lKUe>BDalhgGK?R]2
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 [_;>dzgYI4PB7865XS?430
+!i10b 1
+Econtrolblock
+Z19 w1511467189
+R2
+R3
+R4
+Z20 8C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/ControlBlock.vhd
+Z21 FC:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/ControlBlock.vhd
+l0
+L4
+V6WKnZV6AcBA6@FW::^;UL0
+R7
+31
+Z22 !s108 1511959271.206000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/ControlBlock.vhd|
+Z24 !s107 C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/ControlBlock.vhd|
+R11
+R12
+!s100 ii0K^dHi6[8E7WW>:lREl3
+!i10b 1
+Afsmbehavioral
+R2
+R3
+DEx4 work 12 controlblock 0 22 6WKnZV6AcBA6@FW::^;UL0
+l24
+L14
+V7=S9H3@h]BZHI=JRLJQz;2
+R7
+31
+R22
+R23
+R24
+R11
+R12
+!s100 2>8d?hPNe5k54fQL^@YIW3
+!i10b 1
+Edatapath
+R19
+R2
+R3
+R4
+Z25 8C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Datapath.vhd
+Z26 FC:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Datapath.vhd
+l0
+L4
+VgFYk9mh>f<m2HeK1SG5UB3
+R7
+31
+Z27 !s108 1511959271.026000
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Datapath.vhd|
+Z29 !s107 C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Datapath.vhd|
+R11
+R12
+!s100 56Dmk]=7]Tc92=ZJEcUlm1
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 8 datapath 0 22 gFYk9mh>f<m2HeK1SG5UB3
+l138
+L14
+Vo=K_JQ`W>hkb6h4AHD=0@1
+R7
+31
+R27
+R28
+R29
+R11
+R12
+!s100 YF`e?jmZJbMn`U2QEX@n80
+!i10b 1
+Emipsmulticycle
+R19
+R2
+R3
+R4
+Z30 8C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/MipsMulticycle.vhd
+Z31 FC:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/MipsMulticycle.vhd
+l0
+L4
+V]UY1G0lzUmNe_R63fSQS@3
+R7
+31
+Z32 !s108 1511959270.690000
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/MipsMulticycle.vhd|
+Z34 !s107 C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/MipsMulticycle.vhd|
+R11
+R12
+!s100 ERaIYO70ZGAaIDh[<K>ET0
+!i10b 1
+Astructural
+R2
+R3
+DEx4 work 14 mipsmulticycle 0 22 ]UY1G0lzUmNe_R63fSQS@3
+l46
+L13
+V1:dSa>O7eN2>O:a7PoH7g1
+R7
+31
+R32
+R33
+R34
+R11
+R12
+!s100 fWPmlS4iL?RdhZd@=D]X@2
+!i10b 1
+Eregisternbits
+R1
+R2
+R3
+R4
+Z35 8C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Registers/RegisterNBits.vhd
+Z36 FC:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Registers/RegisterNBits.vhd
+l0
+L4
+VY@jRW2V`JYmWk:c`6;B@12
+R7
+31
+Z37 !s108 1511959271.613000
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Registers/RegisterNBits.vhd|
+Z39 !s107 C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Registers/RegisterNBits.vhd|
+R11
+R12
+!s100 I4G4;U^B]>ie@9L?AVj703
+!i10b 1
+Abehavioral
+R2
+R3
+DEx4 work 13 registernbits 0 22 Y@jRW2V`JYmWk:c`6;B@12
+l18
+L15
+Vh[m`Mo=J?RN^AEY7TjlDh3
+R7
+31
+R37
+R38
+R39
+R11
+R12
+!s100 GCDlHRfCnzKXI<lCLK8nC1
+!i10b 1
+Eregistersbank
+R1
+Z40 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z41 8C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Registers/RegistersBank.vhd
+Z42 FC:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Registers/RegistersBank.vhd
+l0
+L5
+V2V00E:kUd1QSO;Y?[[^=A0
+R7
+31
+Z43 !s108 1511959271.410000
+Z44 !s90 -reportprogress|300|-93|-work|work|C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Registers/RegistersBank.vhd|
+Z45 !s107 C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Registers/RegistersBank.vhd|
+R11
+R12
+!s100 46QkShgH<imze7LERbVLI1
+!i10b 1
+Acomportamental
+R40
+R2
+R3
+DEx4 work 13 registersbank 0 22 2V00E:kUd1QSO;Y?[[^=A0
+l22
+L19
+V:n6X>n]>hkz3G?I^SgGQc3
+R7
+31
+R43
+R44
+R45
+R11
+R12
+!s100 4nZbk5O602zXlU>hAg>TX3
+!i10b 1
+Esignalextension
+R1
+R2
+R3
+R4
+Z46 8C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/SignalExtension.vhd
+Z47 FC:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/SignalExtension.vhd
+l0
+L4
+VYmoB6kPR@f0Zf=?TLEQYD2
+!s100 UmEHl0;=N04;NAG0U@[2e2
+R7
+31
+!i10b 1
+Z48 !s108 1511959273.714000
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/SignalExtension.vhd|
+Z50 !s107 C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/Source/Miscellany/SignalExtension.vhd|
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 15 signalextension 0 22 YmoB6kPR@f0Zf=?TLEQYD2
+l15
+L14
+VzAgLd;;0N4b8iLTh2`l4g2
+!s100 I5Ez<H`SUk0zMd@`FiJ=<3
+R7
+31
+!i10b 1
+R48
+R49
+R50
+R11
+R12

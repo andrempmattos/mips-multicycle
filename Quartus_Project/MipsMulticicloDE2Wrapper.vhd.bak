@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MipsMulticicloDE2Wrapper is
+	port(
+		KEY: in std_logic_vector(0 to 3);
+		HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6: out std_logic_vector(0 to 6);
+		LEDR: out std_logic_vector(0 to 15);
+		LEDG: out std_logic_vector(0 to 3)
+	);
+end;
+
+architecture estrutural of MipsMulticicloDE2Wrapper is
+beginend;
+	

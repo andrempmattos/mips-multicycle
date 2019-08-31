@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+Analysis & Synthesis Status : Successful - Wed Nov 29 14:12:06 2017
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+=======
+Analysis & Synthesis Status : Successful - Thu Nov 23 11:05:56 2017
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+Revision Name : MipsMulticicloDE2Wrapper
+Top-level Entity Name : MipsMulticycle
+Family : Cyclone II
+<<<<<<< HEAD
+Total logic elements : 2,865
+    Total combinational functions : 1,807
+    Dedicated logic registers : 1,228
+Total registers : 1228
+Total pins : 102
+=======
+Total logic elements : 2,998
+    Total combinational functions : 1,930
+    Dedicated logic registers : 1,238
+Total registers : 1238
+Total pins : 89
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+Total virtual pins : 0
+Total memory bits : 8,192
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

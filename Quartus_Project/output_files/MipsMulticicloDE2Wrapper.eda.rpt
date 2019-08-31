@@ -1,0 +1,115 @@
+EDA Netlist Writer report for MipsMulticicloDE2Wrapper
+<<<<<<< HEAD
+Wed Nov 29 14:12:50 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+=======
+Thu Nov 23 11:06:37 2017
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+<<<<<<< HEAD
+; EDA Netlist Writer Status ; Successful - Wed Nov 29 14:12:50 2017 ;
+=======
+; EDA Netlist Writer Status ; Successful - Thu Nov 23 11:06:37 2017 ;
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+; Revision Name             ; MipsMulticicloDE2Wrapper              ;
+; Top-level Entity Name     ; MipsMulticycle                        ;
+; Family                    ; Cyclone II                            ;
+; Simulation Files Creation ; Successful                            ;
++---------------------------+---------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                        ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Option                                                                                            ; Setting                ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
+; Generate netlist for functional simulation only                                                   ; Off                    ;
+; Time scale                                                                                        ; 1 ps                   ;
+; Truncate long hierarchy paths                                                                     ; Off                    ;
+; Map illegal HDL characters                                                                        ; Off                    ;
+; Flatten buses into individual nodes                                                               ; Off                    ;
+; Maintain hierarchy                                                                                ; Off                    ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
+; Enable glitch filtering                                                                           ; Off                    ;
+; Do not write top level VHDL entity                                                                ; Off                    ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
+; Architecture name in VHDL output netlist                                                          ; structure              ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                    ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                    ;
++---------------------------------------------------------------------------------------------------+------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                     ;
++----------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                ;
++----------------------------------------------------------------------------------------------------------------+
+; C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/simulation/modelsim/MipsMulticicloDE2Wrapper.vho          ;
+; C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/simulation/modelsim/MipsMulticicloDE2Wrapper_fast.vho     ;
+; C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/simulation/modelsim/MipsMulticicloDE2Wrapper_vhd.sdo      ;
+; C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/simulation/modelsim/MipsMulticicloDE2Wrapper_vhd_fast.sdo ;
++----------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit EDA Netlist Writer
+<<<<<<< HEAD
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Nov 29 14:12:47 2017
+=======
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Thu Nov 23 11:06:34 2017
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off MipsMulticicloDE2Wrapper -c MipsMulticicloDE2Wrapper
+Info (204026): Generated files "MipsMulticicloDE2Wrapper.vho", "MipsMulticicloDE2Wrapper_fast.vho", "MipsMulticicloDE2Wrapper_vhd.sdo" and "MipsMulticicloDE2Wrapper_vhd_fast.sdo" in directory "C:/Users/pedro/Documents/GitHub/INE5406/RelatorioIII/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+<<<<<<< HEAD
+    Info: Peak virtual memory: 470 megabytes
+    Info: Processing ended: Wed Nov 29 14:12:50 2017
+=======
+    Info: Peak virtual memory: 452 megabytes
+    Info: Processing ended: Thu Nov 23 11:06:37 2017
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

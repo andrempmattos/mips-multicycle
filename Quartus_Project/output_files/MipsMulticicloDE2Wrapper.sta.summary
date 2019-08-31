@@ -1,0 +1,117 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+<<<<<<< HEAD
+Type  : Slow Model Setup 'clockDivider:CD|clock_out_s'
+Slack : -6.920
+TNS   : -5629.500
+
+Type  : Slow Model Setup 'Clock'
+Slack : -1.914
+TNS   : -96.353
+
+Type  : Slow Model Hold 'Clock'
+Slack : -2.557
+TNS   : -2.557
+
+Type  : Slow Model Hold 'clockDivider:CD|clock_out_s'
+Slack : 0.535
+=======
+Type  : Slow Model Setup 'Debounce:DebClk|OP1'
+Slack : -9.798
+TNS   : -6287.164
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -0.081
+TNS   : -0.132
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : -1.588
+TNS   : -1.588
+
+Type  : Slow Model Hold 'Debounce:DebClk|OP1'
+Slack : 0.533
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'Debounce:DebClk|OP1'
+Slack : -2.902
+TNS   : -3550.414
+
+Type  : Slow Model Removal 'Debounce:DebClk|OP1'
+Slack : 3.111
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Clock'
+Slack : -2.000
+<<<<<<< HEAD
+TNS   : -330.380
+
+Type  : Slow Model Minimum Pulse Width 'clockDivider:CD|clock_out_s'
+Slack : -0.500
+TNS   : -1227.000
+
+Type  : Fast Model Setup 'clockDivider:CD|clock_out_s'
+Slack : -2.646
+TNS   : -2065.812
+
+Type  : Fast Model Setup 'Clock'
+Slack : -1.460
+TNS   : -50.378
+
+Type  : Fast Model Hold 'Clock'
+Slack : -1.598
+TNS   : -1.598
+
+Type  : Fast Model Hold 'clockDivider:CD|clock_out_s'
+Slack : 0.246
+=======
+TNS   : -1554.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -13.380
+
+Type  : Fast Model Setup 'Debounce:DebClk|OP1'
+Slack : -3.983
+TNS   : -2344.408
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -0.943
+TNS   : -0.943
+
+Type  : Fast Model Hold 'Debounce:DebClk|OP1'
+Slack : 0.246
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'Debounce:DebClk|OP1'
+Slack : -1.226
+TNS   : -1496.118
+
+Type  : Fast Model Removal 'Debounce:DebClk|OP1'
+Slack : 1.863
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Clock'
+Slack : -2.000
+<<<<<<< HEAD
+TNS   : -330.380
+
+Type  : Fast Model Minimum Pulse Width 'clockDivider:CD|clock_out_s'
+Slack : -0.500
+TNS   : -1227.000
+=======
+TNS   : -1554.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -13.380
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+
+------------------------------------------------------------

@@ -1,0 +1,12 @@
+<sld_project_info>
+  <project>
+<<<<<<< HEAD
+    <hash md5_digest_80b="853968c708123e73ae6c"/>
+=======
+    <hash md5_digest_80b="03d6c6241a36a6729fc5"/>
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+  </project>
+  <file_info>
+    <file device="EP2C35F672C6" path="MipsMulticicloDE2Wrapper.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+</sld_project_info>

@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MipsMulticiclo is
+	port(
+		clock, reset: in std_logic;
+		MemInstrEnder, MemDadosEnder,
+		MemInstrValor, MemInstrValor,
+		ULAValor: out std_logic_vector(15 downto 0)
+	);
+end;
+
+architecture estrutural of MipsMulticiclo is
+begin
+end;
+	

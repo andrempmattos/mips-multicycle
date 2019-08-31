@@ -1,0 +1,20 @@
+radix define CurrentState {
+14'b00000000000000 "Init",
+14'b00000000000011 "Debug",
+14'b00000000000101 "TestArrayStep",
+14'b00000000001001 "TestElementStep",
+14'b00000000010001 "SwapAOutRAM",
+14'b00000000100001 "SwapBOutRAM",
+14'b00000001000001 "SwapALoadRAM",
+14'b00000010000001 "SwapBLoadRAM",
+14'b00000100000001 "TestSwap",
+14'b00001000000001 "SwapFunctionA",
+14'b00010000000001 "SwapFunctionB",
+14'b00100000000001 "IncrementStep",
+14'b01000000000001 "IncrementElement",
+14'b10000000000001 "Stop",
+-default symb
+}
+
+force /Clock 0 0ns, 1 10ns -r 20ns
+force /Reset 1 0ns, 0 5ns

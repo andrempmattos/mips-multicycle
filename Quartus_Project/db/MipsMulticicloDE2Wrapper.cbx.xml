@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="MipsMulticicloDE2Wrapper">
+<<<<<<< HEAD
+		<CBX_INST_ENTRY INSTANCE_NAME="|MipsMulticycle|Datapath:DP|Memory:RAM|bram:SectorA|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_78d1.tdf"/>
+=======
+		<CBX_INST_ENTRY INSTANCE_NAME="|MipsMulticicloDE2Wrapper|MipsMulticycle:Mips|Datapath:DP|Memory:RAM|bram:SectorA|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_kaf1.tdf"/>
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+	</PROJECT>
+</LOG_ROOT>

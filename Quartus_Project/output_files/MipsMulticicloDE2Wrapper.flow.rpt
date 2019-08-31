@@ -1,0 +1,191 @@
+Flow report for MipsMulticicloDE2Wrapper
+<<<<<<< HEAD
+Wed Nov 29 14:12:50 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+=======
+Thu Nov 23 11:06:37 2017
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
+<<<<<<< HEAD
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Wed Nov 29 14:12:50 2017           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; MipsMulticicloDE2Wrapper                        ;
+; Top-level Entity Name              ; MipsMulticycle                                  ;
+; Family                             ; Cyclone II                                      ;
+; Device                             ; EP2C35F672C6                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 2,145 / 33,216 ( 6 % )                          ;
+;     Total combinational functions  ; 1,807 / 33,216 ( 5 % )                          ;
+;     Dedicated logic registers      ; 1,228 / 33,216 ( 4 % )                          ;
+; Total registers                    ; 1228                                            ;
+; Total pins                         ; 102 / 475 ( 21 % )                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 8,192 / 483,840 ( 2 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
+=======
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Successful - Thu Nov 23 11:06:37 2017      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; MipsMulticicloDE2Wrapper                   ;
+; Top-level Entity Name              ; MipsMulticicloDE2Wrapper                   ;
+; Family                             ; Cyclone II                                 ;
+; Device                             ; EP2C35F672C6                               ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 2,363 / 33,216 ( 7 % )                     ;
+;     Total combinational functions  ; 1,930 / 33,216 ( 6 % )                     ;
+;     Dedicated logic registers      ; 1,238 / 33,216 ( 4 % )                     ;
+; Total registers                    ; 1238                                       ;
+; Total pins                         ; 89 / 475 ( 19 % )                          ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 8,192 / 483,840 ( 2 % )                    ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
++------------------------------------+--------------------------------------------+
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+
+
++----------------------------------------------+
+; Flow Settings                                ;
++-------------------+--------------------------+
+; Option            ; Setting                  ;
++-------------------+--------------------------+
+<<<<<<< HEAD
+; Start date & time ; 11/29/2017 14:12:01      ;
+=======
+; Start date & time ; 11/23/2017 11:05:50      ;
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+; Main task         ; Compilation              ;
+; Revision Name     ; MipsMulticicloDE2Wrapper ;
++-------------------+--------------------------+
+
+
+<<<<<<< HEAD
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                         ;
++-------------------------------------+---------------------------------------+--------------------------+----------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value            ; Entity Name    ; Section Id     ;
++-------------------------------------+---------------------------------------+--------------------------+----------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 31118928143292.151197192103028        ; --                       ; --             ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --                       ; --             ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>                   ; --             ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --                       ; --             ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --                       ; --             ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --                       ; MipsMulticycle ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --                       ; MipsMulticycle ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --                       ; MipsMulticycle ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --                       ; --             ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --                       ; --             ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --                       ; --             ; --             ;
+; TOP_LEVEL_ENTITY                    ; MipsMulticycle                        ; MipsMulticicloDE2Wrapper ; --             ; --             ;
++-------------------------------------+---------------------------------------+--------------------------+----------------+----------------+
+=======
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 22942260545040.151144235002512        ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 594 MB              ; 00:00:04                           ;
+; Fitter                    ; 00:00:23     ; 1.0                     ; 821 MB              ; 00:00:21                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 484 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 495 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 459 MB              ; 00:00:03                           ;
+; Total                     ; 00:00:37     ; --                      ; --                  ; 00:00:33                           ;
+=======
+; Analysis & Synthesis      ; 00:00:06     ; 1.0                     ; 541 MB              ; 00:00:06                           ;
+; Fitter                    ; 00:00:27     ; 1.0                     ; 798 MB              ; 00:00:27                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 453 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 465 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 444 MB              ; 00:00:03                           ;
+; Total                     ; 00:00:42     ; --                      ; --                  ; 00:00:41                           ;
+>>>>>>> 184c011879789cdc46197d0cb5debcd938b4ad33
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-RAMP173  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-RAMP173  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-RAMP173  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-RAMP173  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-RAMP173  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off MipsMulticicloDE2Wrapper -c MipsMulticicloDE2Wrapper
+quartus_fit --read_settings_files=off --write_settings_files=off MipsMulticicloDE2Wrapper -c MipsMulticicloDE2Wrapper
+quartus_asm --read_settings_files=off --write_settings_files=off MipsMulticicloDE2Wrapper -c MipsMulticicloDE2Wrapper
+quartus_sta MipsMulticicloDE2Wrapper -c MipsMulticicloDE2Wrapper
+quartus_eda --read_settings_files=off --write_settings_files=off MipsMulticicloDE2Wrapper -c MipsMulticicloDE2Wrapper
+
+
+
